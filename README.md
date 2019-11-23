@@ -11,7 +11,7 @@ $ docker build -t reverse-proxy .
 $ cd backend/
 $ docker build -t app-sumar .
 ```
-create and start containers with:
+Create and start containers with:
 
 ```sh
 $ docker-compose up -d
