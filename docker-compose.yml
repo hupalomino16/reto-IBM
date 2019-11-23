@@ -1,0 +1,13 @@
+services:
+
+    reverseproxy:
+        image: nginx
+        ports:
+            - 8080:80
+        restart: always
+
+    app:
+        depends_on:
+            - reverseproxy
+        image: app-sumar
+        restart: always
