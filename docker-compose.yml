@@ -1,7 +1,7 @@
 services:
 
     reverseproxy:
-        image: nginx
+        image: reverse-proxy
         ports:
             - 8080:8080
         restart: always
